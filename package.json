@@ -1,0 +1,33 @@
+{
+  "name": "function-mnubo-js",
+  "version": "0.0.1",
+  "description": "Prototype Google IoT PubSub integration",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mnubo/function-mnubo-js"
+  },
+  "dependencies": {
+    "@google-cloud/debug-agent": "*",
+    "lodash": "^4.17.4",
+    "mnubo-sdk": "^1.7.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "eslint-plugin-jasmine": "^2.2.0",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.0",
+    "jasmine-node": "^1.14.5"
+  },
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "jasmine-node spec"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  }
+}
