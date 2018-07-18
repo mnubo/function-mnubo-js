@@ -4,15 +4,15 @@ Google IoT integration using Google Functions and SmartObjects client
 Requirements
 -------------
 - The [Google Cloud SDK](https://cloud.google.com/sdk/)
-- [NodeJS >=6.9.1](https://nodejs.org/en/blog/release/v6.9.1/)
-- A [mnubo account](https://smartobjects.mnubo.com/signup) for a sandbox and/or a production with API credentials.
-- [mnubo SmartObjects client](https://github.com/mnubo/mnubo-js-sdk).
+- [NodeJS >=6.14.0](https://nodejs.org/en/blog/release/v6.14.0/)
+- A [mnubo account](https://smartobjects.mnubo.com/login) for a sandbox and/or a production with API credentials.
+- [mnubo SmartObjects client](https://github.com/mnubo/smartobjects-js-client).
 
 Pre-requisites
 -------------
 - Install the [Google Cloud SDK](https://cloud.google.com/sdk/) according to the documentation.
 - ***Optional*** - Install the [Google Cloud Functions Emulator](https://cloud.google.com/functions/docs/emulator) to test your function locally.
-- Google Cloud Functions supports [Node JS 6.9.1](https://nodejs.org/en/blog/release/v6.9.1/). Make sure you have your IDE and Node JS version to support that.
+- Google Cloud Functions supports [Node JS 6.14.0](https://nodejs.org/en/blog/release/v6.14.0/). Make sure you have your IDE and Node JS version to support that.
 - Setup the Google IoT environment. If you're starting, please see the [tutorial](https://cloud.google.com/iot/docs/device_manager_guide) for a basic setup. From there you will:
    - Setup a project
    - Enable billing
