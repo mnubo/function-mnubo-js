@@ -24,8 +24,12 @@ const _ = require('lodash');
  *
  * @return {String} A ISO-formatted string.
  */
-function standardizeTimestamp(ts) {
-    return new Date(ts).toISOString();
+function standardizeTimestamp(ts = null) {
+    if (ts) {
+        return new Date(ts).toISOString();
+    } else {
+        return new Date().toISOString();
+    }
 }
 exports.standardizeTimestamp = standardizeTimestamp;
 
@@ -55,7 +59,7 @@ function mapIotObjectToMnuboObject(attrs, defaultOwnerId,
     mnuboObject.x_owner.username = defaultOwnerId;
 
     /* Unless the object provides a timestamp in the event, generate one */
-    const ts = new Date().toISOString();
+    const ts = standardizeTimestamp();
     mnuboObject.x_timestamp = ts;
     mnuboObject.x_last_update_timestamp = ts;
 
